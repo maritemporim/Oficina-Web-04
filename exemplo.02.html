@@ -23,9 +23,10 @@
 
         button {
             padding: .45rem 1rem;
-            background-color: lightblue;
+            background-color: #ebe1f5;
             color: black;
             border: none;
+            box-shadow: purple;
         }
 
         .resposta {
@@ -42,15 +43,15 @@
 
         .item {
             text-align: center;
-            background-color: #b434d1;
-            color: #f7d80c;
+            background-color: #ebe1f5;
+            color: black;
             font-weight: bold;
             width: 11rem;
             height: 5rem;
             margin: 1rem;
             padding: 1rem;
-            border: 1px solid #a3a0a0;
-            box-shadow: 0.5rem .5rem .3rem .01rem #a3a0a0;
+            border: 1px solid purple;
+            box-shadow: 0.5rem .5rem .3rem .01rem purple;
         }
     </style>
 </head>
@@ -59,8 +60,7 @@
     <div class="entrada">
         Número: <input type="number" id="numero">
         <button onclick="processar()">OK</button>
-        <div id="resp" class="resposta">
-        </div>
+    
     </div>
 
     <script>
@@ -80,6 +80,9 @@
             }
         }
     </script>
+
+    <div id="resp" class="resposta">
+    </div>
 </body>
 
 </html>
